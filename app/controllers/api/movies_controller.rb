@@ -13,6 +13,7 @@ class Api::MoviesController < ApplicationController
     @movie = Movie.new(
       title: params[:title],
       year: params[:year],
+      director: params[:director],
       plot: params[:plot]
       )
     @movie.save
@@ -23,6 +24,8 @@ class Api::MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
     @movie.title = params[:title] || @movie.title
     @movie.year = params[:year]  || @movie.year
+    @movie.director = params[:director]  || @movie.director
+    @movie.english = params[:english]  || @movie.english
     @movie.plot = params[:plot] || @movie.plot
 
     @movie.save
