@@ -1,8 +1,3 @@
-Actor.create!([
-  {first_name: "Chris", last_name: "Tucker", known_for: "Friday", gender: "Male", age: 47, movie_id: 5},
-  {first_name: "Bruce", last_name: "Willis", known_for: "Die Hard", gender: "Male", age: 33, movie_id: 5},
-  {first_name: "Jackie", last_name: "Chan", known_for: "Rumble in the Bronx", gender: "Male", age: 50, movie_id: 2}
-])
 Genre.create!([
   {name: "Comedy"},
   {name: "Action"},
@@ -16,6 +11,11 @@ Movie.create!([
   {title: "Commando", year: 1985, plot: "A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.", director: nil, english: true},
   {title: "Silence of the Lambs", year: 1991, plot: "A young F.B.I. cadet (Jodie Foster) must receive the help of an incarcerated and manipulative cannibal killer (Sir Anthony Hopkins) to help catch another serial killer (Ted Levine), a madman who skins his victims.", director: "Jonathan Demme", english: true},
   {title: "The Fifth Element", year: 1997, plot: "In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr. Zorg at bay.", director: "Luc Besson", english: true}
+])
+Actor.create!([
+  {first_name: "Chris", last_name: "Tucker", known_for: "Friday", gender: "Male", age: 47, movie_id: 5},
+  {first_name: "Bruce", last_name: "Willis", known_for: "Die Hard", gender: "Male", age: 33, movie_id: 5},
+  {first_name: "Jackie", last_name: "Chan", known_for: "Rumble in the Bronx", gender: "Male", age: 50, movie_id: 2}
 ])
 MovieGenre.create!([
   {genre_id: 3, movie_id: 1},
